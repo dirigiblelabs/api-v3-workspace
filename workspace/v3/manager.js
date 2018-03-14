@@ -32,8 +32,8 @@ exports.getWorkspacesNames = function() {
 	return workspacesNames;
 };
 
-exports.deletetWorkspace = function(name) {
-	java.call('org.eclipse.dirigible.api.v3.workspace.WorkspaceFacade', 'deletetWorkspace', [name], true);
+exports.deleteWorkspace = function(name) {
+	java.call('org.eclipse.dirigible.api.v3.workspace.WorkspaceFacade', 'deleteWorkspace', [name], true);
 };
 
 /**
