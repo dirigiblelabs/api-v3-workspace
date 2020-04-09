@@ -334,13 +334,13 @@ function File() {
 	this.getContent = function() {
 		var output = org.eclipse.dirigible.api.v3.workspace.WorkspaceFacade.getContent(this.native);
 		if (output && output !== null) {
-			return JSON.parse(output);
+			output;
 		}
 		return output;
 	};
 	
 	this.setContent = function(input) {
-		var output = org.eclipse.dirigible.api.v3.workspace.WorkspaceFacade.setContent(this.native, JSON.stringify(input));
+		var output = org.eclipse.dirigible.api.v3.workspace.WorkspaceFacade.setContent(this.native, input);
 		return output;
 	};
 
