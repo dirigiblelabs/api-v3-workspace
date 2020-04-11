@@ -156,8 +156,8 @@ function Project() {
 		return this.native.deleteFolder(path);
 	};
 	
-	this.createFile = function(path) {
-		var native = this.native.createFile(path);
+	this.createFile = function(path, input) {
+		var native = this.native.createFile(path, input);
 		var file = new File();
 		file.native = native;
 		return file;
@@ -275,8 +275,8 @@ function Folder() {
 		return this.native.deleteFolder(path);
 	};
 	
-	this.createFile = function(path) {
-		var file = this.native.createFile(path);
+	this.createFile = function(path, input) {
+		var file = this.native.createFile(path, input);
 		var file = new File();
 		file.native = native;
 		return file;
@@ -348,4 +348,3 @@ function File() {
 		return this.native.exists();
 	};
 }
-
