@@ -1,3 +1,6 @@
+# Deprecated
+This module is deprecated and the development is continued into: [dirigiblelabs/api-platform](https://github.com/dirigiblelabs/api-platform)
+
 # API - Workspace
 
 [![Eclipse License](http://img.shields.io/badge/license-Eclipse-brightgreen.svg)](LICENSE)
